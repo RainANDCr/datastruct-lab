@@ -74,7 +74,7 @@ export function TopNav({ onToggleSidebar }: { onToggleSidebar: () => void }) {
           <TooltipTrigger asChild>
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/RainANDCr/datastruct-lab"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"

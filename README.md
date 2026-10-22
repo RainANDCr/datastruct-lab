@@ -205,6 +205,12 @@ src/
 部署要点（Vite SPA 上 Pages 的两个坑均已处理）：构建时通过 `GITHUB_PAGES=true` 将 `base` 切换为 `/datastruct-lab/`；
 `BrowserRouter` 以 `import.meta.env.BASE_URL` 作为 `basename`；构建产物额外复制一份 `404.html` 作为深链接回落页。
 
+## 文档
+
+- [新手入门与使用教程（Markdown）](./docs/新手入门与使用教程.md) —— 面向零基础读者，含界面导览、输入语法速查、按章节学习路线、内存可视化解读、FAQ 与术语表
+- [新手入门与使用教程（Word）](./docs/DataStruct%20Lab%20新手入门与使用教程.docx) —— 同内容排版版，适合打印与分发
+- [开发计划 PLAN.md](./PLAN.md) —— 阶段划分与架构设计
+
 ## 使用指南
 
 ### 键盘快捷键
