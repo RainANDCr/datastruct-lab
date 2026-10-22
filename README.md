@@ -1,10 +1,13 @@
 # DataStruct Lab
 
+[![Deploy](https://github.com/RainANDCr/datastruct-lab/actions/workflows/deploy.yml/badge.svg)](https://github.com/RainANDCr/datastruct-lab/actions/workflows/deploy.yml)
 [![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-8-646cff?logo=vite&logoColor=white)](https://vite.dev)
 [![Tests](https://img.shields.io/badge/tests-177%20passed-2ea043)](./src/tests)
 [![Algorithms](https://img.shields.io/badge/algorithms-59-8b5cf6)](./src/algorithms)
+
+**[在线演示](https://rainandcr.github.io/datastruct-lab/)** · **[源码仓库](https://github.com/RainANDCr/datastruct-lab)**
 
 数据结构与算法可视化学习平台 —— 面向中国高校计算机专业学生的交互式教学工具。
 
@@ -191,12 +194,16 @@ src/
 - [x] 使用文档：键盘快捷键 + 九章操作命令速查表（见上文「使用指南」）
 - [x] 修正过时文案（内存可视化特色已落地，非「规划中」）
 
-> 部署相关（Playwright 端到端测试、GitHub Actions、GitHub Pages 静态部署）按用户要求暂缓，可随时继续。
+> GitHub Pages 静态部署与 CI 已完成（见 `.github/workflows/deploy.yml`）。Playwright 端到端测试尚未引入。
 
 **托管**
 
+- 在线演示：<https://rainandcr.github.io/datastruct-lab/>（GitHub Pages，push 到 `main` 自动部署）
 - 代码仓库：<https://github.com/RainANDCr/datastruct-lab>
 - 默认分支：`main`
+
+部署要点（Vite SPA 上 Pages 的两个坑均已处理）：构建时通过 `GITHUB_PAGES=true` 将 `base` 切换为 `/datastruct-lab/`；
+`BrowserRouter` 以 `import.meta.env.BASE_URL` 作为 `basename`；构建产物额外复制一份 `404.html` 作为深链接回落页。
 
 ## 使用指南
 
