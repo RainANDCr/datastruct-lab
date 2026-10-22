@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DataStruct Lab —— 数据结构与算法可视化学习平台，覆盖高校《数据结构》教材九章内容。"
+    />
+    <title>DataStruct Lab · 数据结构与算法可视化</title>
+    <script>
+      // 提前应用主题，避免首屏闪烁
+      (function () {
+        try {
+          var raw = localStorage.getItem('dslab-settings');
+          var theme = raw ? JSON.parse(raw).state.theme : 'light';
+          if (theme === 'dark') document.documentElement.classList.add('dark');
+        } catch (e) {
+          /* ignore */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
