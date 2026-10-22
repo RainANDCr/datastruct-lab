@@ -11,6 +11,8 @@ import { applyThemeClass, useSettings } from '@/stores/settings';
 export default function App() {
   const theme = useSettings((s) => s.theme);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  // 与 vite 的 base 保持一致：本地为 '/'，GitHub Pages 为 '/datastruct-lab/'
+  const basename = import.meta.env.BASE_URL.replace(/\/+$/, '');
 
   useEffect(() => {
     applyThemeClass(theme);
@@ -18,7 +20,7 @@ export default function App() {
 
   return (
     <TooltipProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <div className="flex h-full flex-col overflow-hidden">
           <TopNav onToggleSidebar={() => setSidebarOpen((v) => !v)} />
           <div className="flex min-h-0 flex-1">
