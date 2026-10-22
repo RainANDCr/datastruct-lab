@@ -1,5 +1,11 @@
 # DataStruct Lab
 
+[![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-8-646cff?logo=vite&logoColor=white)](https://vite.dev)
+[![Tests](https://img.shields.io/badge/tests-177%20passed-2ea043)](./src/tests)
+[![Algorithms](https://img.shields.io/badge/algorithms-59-8b5cf6)](./src/algorithms)
+
 数据结构与算法可视化学习平台 —— 面向中国高校计算机专业学生的交互式教学工具。
 
 将抽象的数据结构转化为动态、可交互、可回溯的可视化图形，同步高亮当前执行的代码行，
@@ -185,7 +191,12 @@ src/
 - [x] 使用文档：键盘快捷键 + 九章操作命令速查表（见上文「使用指南」）
 - [x] 修正过时文案（内存可视化特色已落地，非「规划中」）
 
-> 部署相关（Playwright 端到端测试、GitHub Actions、静态部署）按用户要求暂缓，可随时继续。
+> 部署相关（Playwright 端到端测试、GitHub Actions、GitHub Pages 静态部署）按用户要求暂缓，可随时继续。
+
+**托管**
+
+- 代码仓库：<https://github.com/RainANDCr/datastruct-lab>
+- 默认分支：`main`
 
 ## 使用指南
 
@@ -245,4 +256,5 @@ src/
 
 ## License
 
-计划开源（GitHub 部署阶段确定许可证）。
+本项目暂未附带开源许可证文件。在缺少 LICENSE 的情况下默认保留所有权利；
+如需允许他人自由使用、修改与分发，建议补充 MIT 或 Apache-2.0 许可证。
